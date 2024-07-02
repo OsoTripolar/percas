@@ -32,7 +32,8 @@ button{
     border: 2px solid rgba(0, 0, 0, 0.5);
     color: white;
     background-color: var(--colorApoyo);
-    /* border: solid 0px red; */
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 button:hover{
@@ -40,6 +41,16 @@ button:hover{
     background-color: color-mix(in srgb,var(--colorApoyo) 80%, black);
 }
 
+p{
+    font-size: 1.5rem;
+    color:#333
+}
+
+em{
+    font-style: normal;
+    font-weight: bold;
+    color: #000;
+}
 
 /* ----- Estilos por Bloques ----- */
 
@@ -92,7 +103,7 @@ header nav a:hover{
 /* Gancho */
 
 #gancho{
-    /* background-color: lightblue; */
+
 }
 
 #gancho .container{
@@ -124,4 +135,11 @@ header nav a:hover{
     .logo{
         margin: 0;
     }
+
+    /* Seccion */
+
+    #gancho .container{
+        max-width: 1000px;
+    }
+    
 }
