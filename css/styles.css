@@ -1,12 +1,12 @@
 /* Variables */
 
 :root { --principal: rgb(163, 163, 163);}
+:root { --colorApoyo: rgb(0, 35, 85);}
 
 /* Estilos Generales */
 
 *{
     box-sizing: border-box;
-    color:white;
 }
 
 body{
@@ -15,9 +15,31 @@ body{
     background-color: white;
 }
 
+h1{
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+}
+
 a{
     text-decoration: none;
+    color: inherit;
 }
+
+button{
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: var(--colorApoyo);
+    /* border: solid 0px red; */
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: color-mix(in srgb,var(--colorApoyo) 80%, black);
+}
+
 
 /* ----- Estilos por Bloques ----- */
 
@@ -25,6 +47,7 @@ a{
 
 header{
     background-color: #000;
+    color: white;
 }
 
 header .container{
@@ -57,6 +80,33 @@ header nav a{
 header nav a:hover{
     color: var(--principal)
 }
+
+/* Título */
+
+#titulo{
+    border-bottom: solid 2px #ccc;
+    background-color: #eee;
+    padding: 35px;
+}
+
+/* Gancho */
+
+#gancho{
+    /* background-color: lightblue; */
+}
+
+#gancho .container{
+    padding: 5px;
+    text-align: center;
+}
+
+#gancho img{
+    border-radius: 10px;
+    max-width: 80%;
+
+}
+
+/* ----- Responsive ----- */
 
 @media (min-width: 750px){
 
