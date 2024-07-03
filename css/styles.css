@@ -93,15 +93,22 @@ header .container{
     display: flex;
     align-items: center;
     height: 40px;
+    margin-bottom: 5px;
 }
 
 .pagina-actual{
     text-decoration: underline;
 }
 
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 header nav a{
     font-weight: bold;
-    margin: 0 10px;
+    margin: 0 10px 5px;
 }
 
 header nav a:hover{
@@ -183,6 +190,19 @@ footer p{
     .container{
         max-width: 1300px;
         margin: 0 auto;
+    }
+
+    .logo img{
+        margin-bottom: 0px;
+    }
+
+    header nav{
+        flex-direction: row;
+    }
+    
+    header nav a{
+        font-weight: bold;
+        margin: 0 10px ;
     }
 
     header .container{
